@@ -10,11 +10,6 @@ const links = [
   { label: 'Contact', href: '#contact' }
 ]
 
-const initials = profile.name
-  .split(' ')
-  .map((part) => part[0])
-  .join('')
-
 function closeMenu() {
   isOpen.value = false
 }
@@ -24,8 +19,8 @@ function closeMenu() {
   <header>
     <!-- Mobile top bar -->
     <div class="flex items-center justify-between py-5 lg:hidden">
-      <a href="#top" class="text-lg font-bold text-slate-200">
-        {{ initials }}
+      <a href="#top" class="font-serif text-xl font-semibold tracking-tight text-slate-200">
+        {{ profile.name }}
       </a>
       <button
         class="flex h-10 w-10 items-center justify-center rounded border border-navy-lightest text-slate-300"
