@@ -3,7 +3,7 @@ export const profile = {
   name: 'Wayne Gift',
   role: 'Full-Stack Software Developer',
   tagline: 'I build fast, reliable websites, web apps, and mobile apps.',
-  bio: "I'm a full-stack software developer who designs and ships clean, dependable digital products end to end, from a first sketch to a live app in your users' hands. I focus on clear communication, realistic timelines, and code that's easy to maintain long after launch.",
+  bio: "I didn't start out writing code. I got my start in social media and customer care at Zuri Health, learning what actually matters to the people using a product before I ever built one. Now I'm a full-stack developer who ships clean, dependable products end to end, with clear communication and code that's easy to maintain long after launch.",
   location: 'Nairobi, Kenya',
   email: 'wayneurlt@gmail.com',
   availability: 'Available for new projects',
