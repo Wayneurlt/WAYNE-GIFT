@@ -12,7 +12,8 @@ function urlFor(title: string) {
   return projects.find((project) => project.title === title)?.liveUrl
 }
 
-const linkClass = 'text-slate-200 underline decoration-slate-600 underline-offset-2 transition-colors hover:decoration-slate-300'
+const linkClass =
+  'link-pop text-slate-200 underline decoration-slate-600 underline-offset-2 transition-colors hover:decoration-slate-300'
 </script>
 
 <template>
