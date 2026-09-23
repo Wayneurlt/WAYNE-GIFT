@@ -5,7 +5,7 @@ const isOpen = ref(false)
 
 const links = [
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#work' },
   { label: 'Contact', href: '#contact' }
 ]

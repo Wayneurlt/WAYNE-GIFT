@@ -2,9 +2,9 @@
 import { profile } from '~/data/profile'
 
 const highlights = [
-  'End-to-end delivery — one point of contact, from idea to launch.',
-  'Clear communication — regular updates and honest timelines.',
-  'Built to last — clean, tested, well-documented code.'
+  'End-to-end delivery: one point of contact, from idea to launch.',
+  'Clear communication: regular updates and honest timelines.',
+  'Built to last: clean, tested, well-documented code.'
 ]
 </script>
 

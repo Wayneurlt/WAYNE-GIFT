@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// mShots renders a screenshot asynchronously — the first request or two for a
+// mShots renders a screenshot asynchronously. The first request or two for a
 // URL it hasn't seen before can return a fixed 400x300 "Generating Preview…"
 // placeholder instead of the real capture. That placeholder is reliably
 // 400x300 regardless of the requested width, so we can detect it and quietly

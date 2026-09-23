@@ -6,7 +6,7 @@
     <main class="lg:w-[52%] lg:py-24">
       <div class="flex flex-col gap-24 py-16 sm:gap-32 sm:py-20 lg:gap-40 lg:py-0">
         <AboutSection />
-        <SkillsSection />
+        <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
       </div>

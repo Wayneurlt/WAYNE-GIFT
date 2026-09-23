@@ -1,13 +1,14 @@
-// Replace these with your real projects — title, description, tags, and links.
+// Replace these with your real projects: title, description, tags, and links.
 //
 // Screenshots are automatic: set `liveUrl` to the real site and a preview
-// image is generated from it for you (via a free screenshot service) — no
-// need to capture or upload one yourself. Only set `image` explicitly if you
-// want to override that (e.g. a mobile app with no live URL, or a custom shot).
+// image is generated from it for you (via a free screenshot service), so
+// there's no need to capture or upload one yourself. Only set `image`
+// explicitly if you want to override that (e.g. a mobile app with no live
+// URL, or a custom shot).
 export type Project = {
   title: string
   description: string
-  // Your role on this project — e.g. "Lead Frontend Engineer" or "Solo Full-Stack Developer".
+  // Your role on this project, e.g. "Lead Frontend Engineer" or "Solo Full-Stack Developer".
   role?: string
   // 2-3 short bullets on what YOU built/decided, a specific technical challenge you solved,
   // and the outcome. This is what turns a project card into evidence of your work, not
@@ -40,7 +41,7 @@ export const projects: Project[] = [
   {
     title: 'Temi',
     description:
-      "An AI-powered companion app for relationships and community — connecting people, curating events, and offering emotional support and concierge help.",
+      'An AI-powered companion app for relationships and community that connects people, curates events, and offers emotional support and concierge help.',
     category: 'Mobile App',
     tags: ['AI', 'Social', 'Mobile'],
     liveUrl: 'https://www.temi.love/'
@@ -56,7 +57,7 @@ export const projects: Project[] = [
   {
     title: 'Montoya',
     description:
-      "A multiplayer party game platform with Truth or Dare, Charades, and more — playable pass-and-play on one phone or live across everyone's own device.",
+      "A multiplayer party game platform with Truth or Dare, Charades, and more. Playable pass-and-play on one phone or live across everyone's own device.",
     category: 'Web App',
     tags: ['Multiplayer', 'Games'],
     liveUrl: 'https://montoya.ke/'
@@ -159,9 +160,9 @@ function isRealUrl(url?: string): url is string {
   return !!url && /^https?:\/\//i.test(url)
 }
 
-// A free, keyless screenshot service (WordPress's mShots) — first request for
-// a given URL can return a "capturing…" placeholder for a few seconds while it
-// renders the page, then serves the real screenshot on subsequent loads.
+// A free, keyless screenshot service (WordPress's mShots). The first request
+// for a given URL can return a "capturing…" placeholder for a few seconds
+// while it renders the page, then serves the real screenshot on subsequent loads.
 function screenshotUrl(url: string, width = 800) {
   return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=${width}`
 }

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Wayne Gift — Full-Stack Software Developer',
+      title: 'Wayne Gift | Full-Stack Software Developer',
       meta: [
         {
           name: 'description',

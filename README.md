@@ -15,14 +15,14 @@ Then open http://localhost:3000.
 
 All editable content lives in `data/`:
 
-- `data/profile.ts` — name, bio, location, email, socials, stats
-- `data/skills.ts` — languages, frameworks, and tools
-- `data/projects.ts` — portfolio projects (title, description, tags, links)
+- `data/profile.ts`: name, bio, location, email, socials
+- `data/skills.ts`: languages, frameworks, and tools
+- `data/projects.ts`: portfolio projects (title, description, tags, links)
 
-For each project, just set `liveUrl` to the real site — a preview screenshot is generated
+For each project, just set `liveUrl` to the real site, and a preview screenshot is generated
 automatically from it (via a free screenshot service), no image upload needed. Only set an
 explicit `image` if you want to override that (e.g. a mobile app with no live URL, or a custom
-shot) — point it at a URL or a file under `public/projects/`.
+shot); point it at a URL or a file under `public/projects/`.
 
 ## Build
 
