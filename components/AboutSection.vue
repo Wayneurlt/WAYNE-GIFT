@@ -12,7 +12,7 @@ const highlights = [
   <section id="about" class="scroll-mt-24">
     <h2 class="section-label">About Me</h2>
 
-    <div class="max-w-xl space-y-4 text-[15px] leading-relaxed text-slate-400">
+    <div class="max-w-xl space-y-4 text-[15px] font-medium leading-relaxed text-slate-300">
       <p>{{ profile.bio }}</p>
       <p>Based in {{ profile.location }}.</p>
     </div>
