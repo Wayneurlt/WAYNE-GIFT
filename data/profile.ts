@@ -7,7 +7,6 @@ export const profile = {
   location: 'Nairobi, Kenya',
   email: 'wayneurlt@gmail.com',
   availability: 'Available for new projects',
-  resumeUrl: '#',
   socials: [
     { label: 'GitHub', href: 'https://github.com/Wayneurlt', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/wayne-gift-675043252/', icon: 'linkedin' },

@@ -25,7 +25,7 @@ const highlights = [
     </ul>
 
     <div class="mt-10 flex flex-wrap items-center gap-6">
-      <a :href="profile.resumeUrl" class="btn-ghost">Download Résumé</a>
+      <a href="#work" class="btn-ghost">View My Work</a>
       <a href="#contact" class="nav-link text-sm font-medium">Start a project →</a>
     </div>
   </section>
