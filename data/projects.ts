@@ -19,6 +19,8 @@ export type Project = {
   image?: string
   liveUrl?: string
   codeUrl?: string
+  // Featured projects appear on the home page; everything is listed on /work.
+  featured?: boolean
 }
 
 export const projects: Project[] = [
@@ -28,7 +30,8 @@ export const projects: Project[] = [
       'A digital healthcare platform offering on-demand virtual doctor consultations, prescription delivery, lab testing, and a WhatsApp-based health assistant across Africa.',
     category: 'Website',
     tags: ['Healthtech', 'Telemedicine', 'WhatsApp API'],
-    liveUrl: 'https://zuri.health/'
+    liveUrl: 'https://zuri.health/',
+    featured: true
   },
   {
     title: 'ByZara',
@@ -36,7 +39,8 @@ export const projects: Project[] = [
       'A subscription lifestyle platform bundling home cleaning, chef-prepared meals, laundry, and errands into one service for busy households and offices.',
     category: 'Website',
     tags: ['Subscriptions', 'Lifestyle', 'Bookings'],
-    liveUrl: 'https://byzara.life/'
+    liveUrl: 'https://byzara.life/',
+    featured: true
   },
   {
     title: 'Temi',
@@ -44,7 +48,8 @@ export const projects: Project[] = [
       'An AI-powered companion app for relationships and community that connects people, curates events, and offers emotional support and concierge help.',
     category: 'Mobile App',
     tags: ['AI', 'Social', 'Mobile'],
-    liveUrl: 'https://www.temi.love/'
+    liveUrl: 'https://www.temi.love/',
+    featured: true
   },
   {
     title: 'Review Management',
@@ -149,8 +154,81 @@ export const projects: Project[] = [
     category: 'Website',
     tags: ['Faith-Based', 'Community', 'Events'],
     liveUrl: 'https://cgc-main-1.vercel.app/'
+  },
+  {
+    title: 'Prissy Plans Events',
+    description:
+      'A Kenyan event planning, styling, and coordination studio site covering weddings, engagements, birthdays, and baby and bridal showers, with destination events on request.',
+    category: 'Website',
+    tags: ['Events', 'Weddings', 'Bookings'],
+    liveUrl: 'https://prissy-plans-events.vercel.app/'
+  },
+  {
+    title: 'Borrow Buddiez',
+    description:
+      'A peer-to-peer rental marketplace where people rent cameras, tools, event gear, and electronics from nearby owners, with M-Pesa payments.',
+    category: 'Web App',
+    tags: ['Marketplace', 'Rentals', 'M-Pesa'],
+    liveUrl: 'https://borrowbuddiez.vercel.app/',
+    featured: true
+  },
+  {
+    title: 'StyleGrab',
+    description:
+      'A fashion accessories store selling scarves, hosiery, belts, bags, and shoes, with ordering online, via WhatsApp or Instagram, or in store.',
+    category: 'Website',
+    tags: ['E-commerce', 'Fashion', 'M-Pesa'],
+    liveUrl: 'https://stylegrab.vercel.app/'
+  },
+  {
+    title: 'Prime Tech Kenya',
+    description:
+      'A Nairobi Apple products retailer site for iPhones, Macs, iPads, and accessories, with monthly installment plans, trade-ins, and nationwide delivery.',
+    category: 'Website',
+    tags: ['E-commerce', 'Retail', 'Installments'],
+    liveUrl: 'https://primetech-chi.vercel.app/'
+  },
+  {
+    title: 'Masqani Hostel',
+    description:
+      'A site for a managed student hostel in Madaraka, Nairobi, covering room availability, meals, and simple monthly rent.',
+    category: 'Website',
+    tags: ['Accommodation', 'Students', 'Real Estate'],
+    liveUrl: 'https://hms-gamma-rust.vercel.app/'
+  },
+  {
+    title: 'Kora',
+    description:
+      'A school communication product that sends parents exam results, fee balances, and announcements over WhatsApp, with a staff dashboard and shared inbox for managing students, results, and fees.',
+    category: 'Web App',
+    tags: ['Education', 'WhatsApp API', 'Dashboard'],
+    liveUrl: 'https://kora-xi-seven.vercel.app/'
+  },
+  {
+    title: 'The Play Group HRM',
+    description:
+      'An internal HR platform for The Play Group covering attendance, leave, payslips, assigned equipment, notifications, and an HR assistant for policy questions.',
+    category: 'Web App',
+    tags: ['HR', 'Internal Tools', 'Dashboard'],
+    liveUrl: 'https://hr.theplaygroup.net/'
+  },
+  {
+    title: 'Temi SMS Subscription',
+    description: "A subscription portal for Temi's SMS service.",
+    category: 'Web App',
+    tags: ['Subscriptions', 'SMS'],
+    liveUrl: 'https://subscribe.temi.love/'
+  },
+  {
+    title: 'Zuri Health i3 Dashboard',
+    description:
+      "A public impact dashboard reporting Zuri Health's reach across pharmacy, Petals Tracker screenings, the Continuous Care Program, labs, and telemedicine, with a link to the i3 biannual report.",
+    category: 'Web App',
+    tags: ['Healthtech', 'Analytics', 'Impact Reporting'],
+    liveUrl: 'https://i3.zuri.health/'
   }
 ]
+
 
 export const categories = ['All', 'Website', 'Web App', 'Mobile App'] as const
 

@@ -7,6 +7,9 @@ export const profile = {
   location: 'Nairobi, Kenya',
   email: 'wayneurlt@gmail.com',
   availability: 'Available for new projects',
+  // Put your CV PDF in the /public folder and set its path here, e.g. '/Wayne-Gift-CV.pdf'.
+  // The "Download CV" button stays hidden while this is empty.
+  resume: '',
   socials: [
     { label: 'GitHub', href: 'https://github.com/Wayneurlt', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/wayne-gift-675043252/', icon: 'linkedin' },

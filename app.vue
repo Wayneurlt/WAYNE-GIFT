@@ -1,17 +1,47 @@
+<script setup lang="ts">
+import { profile } from '~/data/profile'
+
+const url = useRequestURL()
+const route = useRoute()
+const canonical = computed(() => `${url.origin}${route.path === '/' ? '/' : route.path}`)
+const title = 'Wayne Gift | Full-Stack Software Developer'
+const description =
+  'Wayne Gift is a full-stack software developer building fast, reliable websites, web apps, and mobile apps. View my work and get in touch.'
+
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: canonical }],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        jobTitle: profile.role,
+        url: url.origin,
+        email: profile.email,
+        address: { '@type': 'PostalAddress', addressLocality: 'Nairobi', addressCountry: 'KE' },
+        sameAs: profile.socials.map((s) => s.href).filter((h) => !h.includes('wa.me'))
+      })
+    }
+  ]
+})
+
+useSeoMeta({
+  ogType: 'website',
+  ogSiteName: profile.name,
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: canonical,
+  twitterCard: 'summary',
+  twitterTitle: title,
+  twitterDescription: description
+})
+</script>
+
 <template>
-  <div id="top" class="mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:flex lg:gap-8 lg:px-20">
-    <StarsBackground />
-    <div class="grain-overlay"></div>
-    <BranchAccent />
-    <TheHeader />
-    <main class="lg:w-[52%] lg:py-24">
-      <div class="flex flex-col gap-24 py-16 sm:gap-32 sm:py-20 lg:gap-40 lg:py-0">
-        <AboutSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection />
-      </div>
-      <TheFooter />
-    </main>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

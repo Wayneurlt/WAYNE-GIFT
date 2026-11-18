@@ -4,10 +4,10 @@ import { profile } from '~/data/profile'
 const isOpen = ref(false)
 
 const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Work', href: '#work' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'About', href: '/#about' },
+  { label: 'Experience', href: '/#experience' },
+  { label: 'Work', href: '/#work' },
+  { label: 'Contact', href: '/#contact' }
 ]
 
 function closeMenu() {
@@ -19,9 +19,9 @@ function closeMenu() {
   <header>
     <!-- Mobile top bar -->
     <div class="flex items-center justify-between py-5 lg:hidden">
-      <a href="#top" class="font-serif text-xl font-semibold tracking-tight text-slate-200">
+      <NuxtLink to="/#top" class="font-serif text-xl font-semibold tracking-tight text-slate-200">
         {{ profile.name }}
-      </a>
+      </NuxtLink>
       <button
         class="flex h-10 w-10 items-center justify-center rounded border border-navy-lightest text-slate-300"
         aria-label="Toggle menu"
@@ -56,15 +56,15 @@ function closeMenu() {
           </svg>
         </button>
 
-        <a
+        <NuxtLink
           v-for="link in links"
           :key="link.href"
-          :href="link.href"
+          :to="link.href"
           class="text-sm font-bold uppercase tracking-widest text-slate-400 transition-colors hover:text-slate-200"
           @click="closeMenu"
         >
           {{ link.label }}
-        </a>
+        </NuxtLink>
 
         <div class="mt-4 flex gap-6">
           <a
@@ -94,10 +94,10 @@ function closeMenu() {
         <nav class="mt-16">
           <ul class="flex flex-col">
             <li v-for="link in links" :key="link.href">
-              <a :href="link.href" class="group flex items-center py-3 text-xs font-bold uppercase tracking-widest text-slate-500 transition-colors hover:text-slate-200">
+              <NuxtLink :to="link.href" class="group flex items-center py-3 text-xs font-bold uppercase tracking-widest text-slate-500 transition-colors hover:text-slate-200">
                 <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200"></span>
                 {{ link.label }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </nav>
