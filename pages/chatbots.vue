@@ -8,13 +8,16 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'WhatsApp virtual-hospital and consumer chatbots built by Wayne Gift on SendPulse.'
+      content: 'WhatsApp, Instagram and website chatbots built by Wayne Gift on SendPulse.'
     }
   ]
 })
 
-// Only WhatsApp bots are listed: those are the ones I built.
-const bots = data.bots.filter((b) => b.channel === 'WHATSAPP')
+type Bot = { id: string; name: string; channel: string; createdAt: string; phone?: string }
+const bots = data.bots as Bot[]
+
+const channelName: Record<string, string> = { WHATSAPP: 'WhatsApp', INSTAGRAM: 'Instagram', LIVE_CHAT: 'Website chat' }
+const waLink = (b: Bot) => (b.phone ? `https://wa.me/${b.phone}?text=${encodeURIComponent('Hi')}` : undefined)
 
 const query = ref('')
 const visible = ref(30)
@@ -35,17 +38,12 @@ function formatDate(iso: string, opts: Intl.DateTimeFormatOptions = { day: 'nume
       <h1 class="font-serif text-4xl font-semibold tracking-tight text-slate-200 sm:text-5xl">Chatbots</h1>
 
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-slate-400">
-        {{ bots.length }} WhatsApp virtual-hospital and consumer chatbots I built on SendPulse.
+        {{ bots.length }} WhatsApp, Instagram and website chatbots I built on SendPulse. Tap a WhatsApp bot to open it in WhatsApp.
       </p>
-
-      <ul class="mt-6 max-w-xl list-disc space-y-1 pl-5 text-sm leading-relaxed text-slate-500">
-        <li>
-          Source: SendPulse chatbots API, read-only, retrieved {{ formatDate(data.retrievedAt) }}. Only bot names,
-          creation dates and inbox totals were read. No contacts or messages were accessed.
-        </li>
-        <li>Scope: {{ data.scope }}.</li>
-        <li>"Conversations" is the number of conversations in a bot's inbox. It is not a count of users.</li>
-      </ul>
+      <p class="mt-3 text-sm text-slate-500">
+        Looking for websites, web apps or mobile apps?
+        <NuxtLink to="/work" class="nav-link font-medium text-slate-300">See all my work →</NuxtLink>
+      </p>
 
       <div class="mt-8">
         <input
@@ -60,19 +58,33 @@ function formatDate(iso: string, opts: Intl.DateTimeFormatOptions = { day: 'nume
       <p v-if="!filtered.length" class="mt-10 text-sm text-slate-400">No chatbots match your search.</p>
 
       <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-        <li
-          v-for="bot in filtered.slice(0, visible)"
-          :key="bot.id"
-          class="flex items-center justify-between gap-4 rounded border border-navy-lightest bg-navy-light p-4"
-        >
-          <div class="min-w-0">
-            <p class="break-words text-sm font-medium leading-snug text-slate-200">{{ bot.name }}</p>
-            <p class="mt-1 text-xs text-slate-500">WhatsApp · {{ formatDate(bot.createdAt, { month: 'short', year: 'numeric' }) }}</p>
-          </div>
-          <div class="shrink-0 text-right">
-            <p class="text-sm font-medium tabular-nums text-slate-200">{{ bot.inboxTotal.toLocaleString('en-GB') }}</p>
-            <p class="text-[11px] text-slate-500">conversations</p>
-          </div>
+        <li v-for="bot in filtered.slice(0, visible)" :key="bot.id">
+          <component
+            :is="waLink(bot) ? 'a' : 'div'"
+            :href="waLink(bot)"
+            :target="waLink(bot) ? '_blank' : undefined"
+            :rel="waLink(bot) ? 'noopener noreferrer' : undefined"
+            :aria-label="waLink(bot) ? `Open ${bot.name} on WhatsApp` : undefined"
+            class="flex items-center gap-3 rounded border border-navy-lightest bg-navy-light p-4 transition-colors"
+            :class="waLink(bot) ? 'hover:border-slate-500' : ''"
+          >
+            <span class="shrink-0 text-slate-400">
+              <SocialIcon v-if="bot.channel === 'WHATSAPP'" name="whatsapp" class="h-5 w-5" />
+              <svg v-else-if="bot.channel === 'INSTAGRAM'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" />
+              </svg>
+              <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3c2.5 2.6 3.75 5.6 3.75 9S14.5 18.4 12 21c-2.5-2.6-3.75-5.6-3.75-9S9.5 5.6 12 3Z" />
+              </svg>
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="block break-words text-sm font-medium leading-snug text-slate-200">{{ bot.name }}</span>
+              <span class="mt-1 block text-xs text-slate-500">{{ channelName[bot.channel] ?? bot.channel }} · {{ formatDate(bot.createdAt, { month: 'short', year: 'numeric' }) }}</span>
+            </span>
+          </component>
         </li>
       </ul>
 

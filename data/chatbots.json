@@ -8,7 +8,6 @@
       "name": "Zuri Health",
       "channel": "INSTAGRAM",
       "createdAt": "2025-07-01",
-      "inboxTotal": 1128,
       "projectId": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "byzara.life",
       "channel": "LIVE_CHAT",
       "createdAt": "2024-09-20",
-      "inboxTotal": 0,
       "projectId": null
     },
     {
@@ -24,312 +22,312 @@
       "name": "Bamburi Cement HealthLine",
       "channel": "WHATSAPP",
       "createdAt": "2026-08-31",
-      "inboxTotal": 197,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888019"
     },
     {
       "id": "6a7b13a2b3b44841d004b381",
       "name": "Hotpoint Wellness 360",
       "channel": "WHATSAPP",
       "createdAt": "2026-08-11",
-      "inboxTotal": 2,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888026"
     },
     {
       "id": "6a5f2ab9265890754c00022f",
       "name": "KARA",
       "channel": "WHATSAPP",
       "createdAt": "2026-07-21",
-      "inboxTotal": 8,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888007"
     },
     {
       "id": "6a4f4ee12bc9c2174a080386",
       "name": "Arjee Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-07-09",
-      "inboxTotal": 78,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888012"
     },
     {
       "id": "6a4e520f89d51c1e6d00bac3",
       "name": "Incentro Africa Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-07-08",
-      "inboxTotal": 27,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888009"
     },
     {
       "id": "6a3bbbab712e8185a1058b38",
       "name": "APA Insurance Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-06-24",
-      "inboxTotal": 2,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888006"
     },
     {
       "id": "6a2fadd268981034c506d5c7",
       "name": "Choice Bank Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-06-15",
-      "inboxTotal": 6,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888010"
     },
     {
       "id": "6a21472b5e20cfeb44076f97",
       "name": "Kenya Harlequin FC Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-06-04",
-      "inboxTotal": 190,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888024"
     },
     {
       "id": "6a0700c508957986eb0d8155",
       "name": "Jubilee Insurance Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-05-15",
-      "inboxTotal": 6,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888004"
     },
     {
       "id": "69f8900ddb0cde0c7a0b96e6",
       "name": "Equity Insurance Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-05-04",
-      "inboxTotal": 56,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888005"
     },
     {
       "id": "69d7959b7e03411b8c02b020",
       "name": "Ecobank Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-04-09",
-      "inboxTotal": 14,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755888002"
     },
     {
       "id": "69c5569f8b5ac656250c199a",
       "name": "ICEA LION Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-03-26",
-      "inboxTotal": 145,
-      "projectId": null
+      "projectId": null,
+      "phone": "254791379234"
     },
     {
       "id": "69bbb899b2e065daa00297d7",
       "name": "HF Group Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-03-19",
-      "inboxTotal": 163,
-      "projectId": null
+      "projectId": null,
+      "phone": "254719222298"
     },
     {
       "id": "69aa849fc971f11c5d07c56a",
       "name": "Bamburi Cement Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-03-06",
-      "inboxTotal": 4,
-      "projectId": null
+      "projectId": null,
+      "phone": "254759429695"
     },
     {
       "id": "69982a8b0fc337c560064dac",
       "name": "Somerset Westview Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-02-20",
-      "inboxTotal": 42,
-      "projectId": null
+      "projectId": null,
+      "phone": "254788333800"
     },
     {
       "id": "696b414fab5c8a1a6f0b2d70",
       "name": "Fairmont Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-01-17",
-      "inboxTotal": 49,
-      "projectId": null
+      "projectId": null,
+      "phone": "254119598894"
     },
     {
       "id": "6962735da796a35d2e007d15",
       "name": "Play Communications Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2026-01-10",
-      "inboxTotal": 40,
-      "projectId": null
+      "projectId": null,
+      "phone": "254113521176"
     },
     {
       "id": "69172ff753d980a38f0dc84b",
       "name": "Fidelity Shield",
       "channel": "WHATSAPP",
       "createdAt": "2025-11-14",
-      "inboxTotal": 152,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755666500"
     },
     {
       "id": "6908793ee84e656fe1072813",
       "name": "Interstrat Ltd Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-11-03",
-      "inboxTotal": 253,
-      "projectId": null
+      "projectId": null,
+      "phone": "254116420533"
     },
     {
       "id": "69022523fa7cc58cd60911a4",
       "name": "Petals by ZuriHealth",
       "channel": "WHATSAPP",
       "createdAt": "2025-10-29",
-      "inboxTotal": 4464,
-      "projectId": null
+      "projectId": null,
+      "phone": "254755333500"
     },
     {
       "id": "68f9dde86acb32e0e302d40b",
       "name": "BIC EA Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-10-23",
-      "inboxTotal": 6,
-      "projectId": null
+      "projectId": null,
+      "phone": "254743803836"
     },
     {
       "id": "68d4e493963f0ad61d09506a",
       "name": "Hotpoint Wellness 360",
       "channel": "WHATSAPP",
       "createdAt": "2025-09-25",
-      "inboxTotal": 42,
-      "projectId": null
+      "projectId": null,
+      "phone": "254768817916"
     },
     {
       "id": "68becc45ae72a571d40065b0",
       "name": "Heritage Insurance Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-09-08",
-      "inboxTotal": 152,
-      "projectId": null
+      "projectId": null,
+      "phone": "254790797157"
     },
     {
       "id": "689c7708f299f384970fbc05",
       "name": "SHA Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-08-13",
-      "inboxTotal": 76,
-      "projectId": null
+      "projectId": null,
+      "phone": "254757280581"
     },
     {
       "id": "685118395af271f75709190a",
       "name": "I&M Bank Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-06-17",
-      "inboxTotal": 203,
-      "projectId": null
+      "projectId": null,
+      "phone": "254740053277"
     },
     {
       "id": "68494dd1bbcdece11d0e5d93",
       "name": "KPLC Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-06-11",
-      "inboxTotal": 91,
-      "projectId": null
+      "projectId": null,
+      "phone": "254727276588"
     },
     {
       "id": "67a9c8d415df8a40e500b28e",
       "name": "Zuri Mama",
       "channel": "WHATSAPP",
       "createdAt": "2025-02-10",
-      "inboxTotal": 1955,
-      "projectId": null
+      "projectId": null,
+      "phone": "254769438585"
     },
     {
       "id": "67923ba9b52b6d2b2b0710ef",
       "name": "Pacis insurance virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-01-23",
-      "inboxTotal": 825,
-      "projectId": null
+      "projectId": null,
+      "phone": "254790753964"
     },
     {
       "id": "67923a469341d058090ece90",
       "name": "GA Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-01-23",
-      "inboxTotal": 113,
-      "projectId": null
+      "projectId": null,
+      "phone": "254791374556"
     },
     {
       "id": "678e1845680461784c0f0e1b",
       "name": "IRC Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-01-20",
-      "inboxTotal": 47,
-      "projectId": null
+      "projectId": null,
+      "phone": "254743526502"
     },
     {
       "id": "67865a1a81be3651d708b267",
       "name": "Madison Virtual Hospital",
       "channel": "WHATSAPP",
       "createdAt": "2025-01-14",
-      "inboxTotal": 316,
-      "projectId": null
+      "projectId": null,
+      "phone": "254723630108"
     },
     {
       "id": "678657a609ae200d2a0976f7",
       "name": "Minet",
       "channel": "WHATSAPP",
       "createdAt": "2025-01-14",
-      "inboxTotal": 1445,
-      "projectId": null
+      "projectId": null,
+      "phone": "254723630174"
     },
     {
       "id": "671f5070ad1a013d6c075842",
       "name": "Girls First Finance Healthbot",
       "channel": "WHATSAPP",
       "createdAt": "2024-10-28",
-      "inboxTotal": 41,
-      "projectId": null
+      "projectId": null,
+      "phone": "254708080457"
     },
     {
       "id": "671887af7f6150ff8009e49b",
       "name": "Nikonachoice",
       "channel": "WHATSAPP",
       "createdAt": "2024-10-23",
-      "inboxTotal": 14915,
-      "projectId": null
+      "projectId": null,
+      "phone": "254708080472"
     },
     {
       "id": "671250fa3de29848fe04d73c",
       "name": "Zuri Health",
       "channel": "WHATSAPP",
       "createdAt": "2024-10-18",
-      "inboxTotal": 25291,
-      "projectId": null
+      "projectId": null,
+      "phone": "254708080690"
     },
     {
       "id": "66fe60a1c9352d9db80343ef",
       "name": "Vera KE",
       "channel": "WHATSAPP",
       "createdAt": "2024-10-03",
-      "inboxTotal": 52328,
-      "projectId": null
+      "projectId": null,
+      "phone": "254756551551"
     },
     {
       "id": "66fa5de0f0a9b0946f0e4fbb",
       "name": "Britam Insurance Virtual Healthcare",
       "channel": "WHATSAPP",
       "createdAt": "2024-09-30",
-      "inboxTotal": 339,
-      "projectId": null
+      "projectId": null,
+      "phone": "254717767057"
     },
     {
       "id": "66f3ca528fc9926be904e16a",
       "name": "Zuri Ease Kenya",
       "channel": "WHATSAPP",
       "createdAt": "2024-09-25",
-      "inboxTotal": 205,
-      "projectId": null
+      "projectId": null,
+      "phone": "254756591008"
     },
     {
       "id": "66ed2f834a386020df07f9b0",
       "name": "Byzara",
       "channel": "WHATSAPP",
       "createdAt": "2024-09-20",
-      "inboxTotal": 46533,
-      "projectId": "byzara"
+      "projectId": "byzara",
+      "phone": "254754551551"
     }
   ]
 }

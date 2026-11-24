@@ -39,6 +39,10 @@ const filteredProjects = computed(() => {
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-slate-400">
         Every project I've shipped, {{ projects.length }} so far. Ask for a full case study on any of them.
       </p>
+      <p class="mt-3 text-sm text-slate-500">
+        I also build WhatsApp chatbots.
+        <NuxtLink to="/chatbots" class="nav-link font-medium text-slate-300">See my chatbots →</NuxtLink>
+      </p>
 
       <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
       <div class="flex flex-wrap gap-2">

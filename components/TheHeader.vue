@@ -76,7 +76,7 @@ function closeMenu() {
           v-for="page in pages"
           :key="page.href"
           :to="page.href"
-          class="rounded-full bg-navy-lightest px-5 py-2 text-sm font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
+          class="px-5 py-2 text-sm font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
           @click="closeMenu"
         >
           {{ page.label }} →
@@ -120,7 +120,7 @@ function closeMenu() {
             <li v-for="page in pages" :key="page.href">
               <NuxtLink
                 :to="page.href"
-                class="inline-flex items-center gap-1.5 rounded-full bg-navy-lightest px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
+                class="inline-flex items-center gap-1.5 py-1.5 pr-4 text-xs font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
               >
                 {{ page.label }} <span aria-hidden="true">→</span>
               </NuxtLink>
