@@ -76,14 +76,6 @@ export const projects: Project[] = [
     liveUrl: 'https://doctorsportal.zuri.health/'
   },
   {
-    title: 'Zuri Health Impact Dashboard',
-    description:
-      "An internal analytics dashboard tracking patient screening, onboarding, and follow-up metrics across Zuri Health's community health camps.",
-    category: 'Web App',
-    tags: ['Healthtech', 'Analytics', 'Dashboard'],
-    liveUrl: 'https://bi.zuri.health/'
-  },
-  {
     title: 'Halo Music',
     description:
       'A music streaming web app with curated playlists across moods and activities, from top hits to workout and chill vibes.',
@@ -218,14 +210,6 @@ export const projects: Project[] = [
     category: 'Web App',
     tags: ['Subscriptions', 'SMS'],
     liveUrl: 'https://subscribe.temi.love/'
-  },
-  {
-    title: 'Zuri Health i3 Dashboard',
-    description:
-      "A public impact dashboard reporting Zuri Health's reach across pharmacy, Petals Tracker screenings, the Continuous Care Program, labs, and telemedicine, with a link to the i3 biannual report.",
-    category: 'Web App',
-    tags: ['Healthtech', 'Analytics', 'Impact Reporting'],
-    liveUrl: 'https://i3.zuri.health/'
   }
 ]
 

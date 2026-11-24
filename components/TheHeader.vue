@@ -10,6 +10,12 @@ const links = [
   { label: 'Contact', href: '/#contact' }
 ]
 
+// Separate pages (not sections of the home page), styled differently in the nav.
+const pages = [
+  { label: 'All Work', href: '/work' },
+  { label: 'Chatbots', href: '/chatbots' }
+]
+
 function closeMenu() {
   isOpen.value = false
 }
@@ -66,6 +72,16 @@ function closeMenu() {
           {{ link.label }}
         </NuxtLink>
 
+        <NuxtLink
+          v-for="page in pages"
+          :key="page.href"
+          :to="page.href"
+          class="rounded-full bg-navy-lightest px-5 py-2 text-sm font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
+          @click="closeMenu"
+        >
+          {{ page.label }} →
+        </NuxtLink>
+
         <div class="mt-4 flex gap-6">
           <a
             v-for="social in profile.socials"
@@ -97,6 +113,16 @@ function closeMenu() {
               <NuxtLink :to="link.href" class="group flex items-center py-3 text-xs font-bold uppercase tracking-widest text-slate-500 transition-colors hover:text-slate-200">
                 <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200"></span>
                 {{ link.label }}
+              </NuxtLink>
+            </li>
+          </ul>
+          <ul class="mt-6 flex flex-wrap gap-2 border-t border-navy-lightest pt-6">
+            <li v-for="page in pages" :key="page.href">
+              <NuxtLink
+                :to="page.href"
+                class="inline-flex items-center gap-1.5 rounded-full bg-navy-lightest px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-slate-300 transition-colors hover:text-slate-100"
+              >
+                {{ page.label }} <span aria-hidden="true">→</span>
               </NuxtLink>
             </li>
           </ul>

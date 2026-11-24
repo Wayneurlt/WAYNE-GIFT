@@ -1,7 +1,8 @@
 // Built from the request's own origin, so it is correct on any domain.
 const paths = [
   { path: '/', priority: '1.0' },
-  { path: '/work', priority: '0.8' }
+  { path: '/work', priority: '0.8' },
+  { path: '/chatbots', priority: '0.7' }
 ]
 
 export default defineEventHandler((event) => {
