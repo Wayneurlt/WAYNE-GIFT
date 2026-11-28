@@ -211,8 +211,9 @@ export const projects: Project[] = [
     liveUrl: 'https://subscribe.temi.love/'
   },
   {
-    title: 'Ablevents',
-    description: 'An events web application built with Java and Spring Boot.',
+    title: 'Able Events',
+    description:
+      'An events platform for creating and hosting events with accessibility built in from the start, built with Java and Spring Boot.',
     role: 'Full-Stack Developer',
     category: 'Web App',
     tags: ['Java', 'Spring Boot', 'Events'],
