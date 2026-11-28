@@ -6,7 +6,7 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     title: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'PHP', 'Dart', 'SQL']
+    items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'SQL']
   },
   {
     title: 'Frontend',
@@ -14,7 +14,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: 'Backend & APIs',
-    items: ['Spring Boot', 'Node.js', 'Express', 'Laravel', 'Django', 'REST', 'GraphQL']
+    items: ['Spring Boot', 'Node.js', 'Express', 'Django', 'REST', 'GraphQL']
   },
   {
     title: 'Mobile',
@@ -22,6 +22,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: 'Data & Infra',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Docker', 'Git', 'CI/CD']
+    items: ['PostgreSQL', 'MySQL', 'Docker', 'Git']
   }
 ]
