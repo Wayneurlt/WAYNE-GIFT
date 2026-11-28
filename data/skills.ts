@@ -6,7 +6,7 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     title: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'SQL']
+    items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'Dart', 'SQL']
   },
   {
     title: 'Frontend',
