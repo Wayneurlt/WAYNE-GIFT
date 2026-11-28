@@ -5,6 +5,8 @@ export const profile = {
   tagline: 'I build fast, reliable websites, web apps, and mobile apps.',
   bio: "I didn't start out writing code. I got my start in social media and customer care at Zuri Health, learning what actually matters to the people using a product before I ever built one. Now I'm a full-stack developer who ships clean, dependable products end to end, with clear communication and code that's easy to maintain long after launch.",
   location: 'Nairobi, Kenya',
+  // Languages, frameworks and tools shown in the About section. Add more here.
+  skills: ['Java', 'Spring Boot'],
   email: 'wayneurlt@gmail.com',
   availability: 'Available for new projects',
   // Put your CV PDF in the /public folder and set its path here, e.g. '/Wayne-Gift-CV.pdf'.

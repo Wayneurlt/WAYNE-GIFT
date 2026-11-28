@@ -39,8 +39,7 @@ export const projects: Project[] = [
       'A subscription lifestyle platform bundling home cleaning, chef-prepared meals, laundry, and errands into one service for busy households and offices.',
     category: 'Website',
     tags: ['Subscriptions', 'Lifestyle', 'Bookings'],
-    liveUrl: 'https://byzara.life/',
-    featured: true
+    liveUrl: 'https://byzara.life/'
   },
   {
     title: 'Temi',
@@ -210,6 +209,15 @@ export const projects: Project[] = [
     category: 'Web App',
     tags: ['Subscriptions', 'SMS'],
     liveUrl: 'https://subscribe.temi.love/'
+  },
+  {
+    title: 'Ablevents',
+    description: 'An events web application built with Java and Spring Boot.',
+    role: 'Full-Stack Developer',
+    category: 'Web App',
+    tags: ['Java', 'Spring Boot', 'Events'],
+    liveUrl: 'https://ablevents.app/',
+    featured: true
   }
 ]
 

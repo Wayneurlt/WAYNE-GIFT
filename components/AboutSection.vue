@@ -40,6 +40,13 @@ const linkClass =
       <p>Based in {{ profile.location }}.</p>
     </div>
 
+    <div v-if="profile.skills.length" class="mt-8">
+      <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500">Skills</h3>
+      <ul class="mt-3 flex flex-wrap gap-2">
+        <li v-for="skill in profile.skills" :key="skill" class="tag">{{ skill }}</li>
+      </ul>
+    </div>
+
     <ul class="mt-8 grid gap-3 sm:grid-cols-2">
       <li v-for="item in highlights" :key="item" class="flex gap-3 text-sm leading-relaxed text-slate-400">
         <span class="mt-0.5 text-amber">▹</span>
